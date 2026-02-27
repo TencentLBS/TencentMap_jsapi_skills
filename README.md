@@ -2,7 +2,7 @@
 
 [中文文档](README_zh.md)
 
-This repository provides AI assistant **Skills** for [Tencent Map JSAPI](https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview). Use them with [Claude](https://claude.ai), [Cursor](https://cursor.com), or other clients that support skills so the AI can reference accurate API docs and examples when you work with Tencent Map.
+This repository provides AI assistant **Skills** for [Tencent Map JSAPI](https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview). Use them with [Claude](https://claude.ai), [Cursor](https://cursor.com), [CodeBuddy](https://codebuddy.ai), or other clients that support skills so the AI can reference accurate API docs and examples when you work with Tencent Map.
 
 ## Included Skills
 
@@ -40,6 +40,15 @@ Link or copy the `tmap-jsapi-gl` directory into your environment's skills folder
   ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.cursor/skills/tmap-jsapi-gl
   ```
 - Or copy the `tmap-jsapi-gl` folder into `~/.cursor/skills/`.
+
+**CodeBuddy**
+
+- Skills directory is usually: `~/.codebuddy/skills/`
+- Register via symlink (recommended):
+  ```bash
+  ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.codebuddy/skills/tmap-jsapi-gl
+  ```
+- Or copy the `tmap-jsapi-gl` folder into `~/.codebuddy/skills/`.
 
 ### 3. Use it in chat
 

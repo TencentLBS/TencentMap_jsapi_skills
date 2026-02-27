@@ -2,7 +2,7 @@
 
 [English Documentation](README.md)
 
-本仓库专门存放**腾讯地图 JSAPI** 相关的 AI 助手 Skills，供 [Claude](https://claude.ai)、[Cursor](https://cursor.com) 等在使用腾讯地图相关 API 时加载，以提供准确的 API 说明与示例。
+本仓库专门存放**腾讯地图 JSAPI** 相关的 AI 助手 Skills，供 [Claude](https://claude.ai)、[Cursor](https://cursor.com)、[CodeBuddy](https://codebuddy.ai) 等在使用腾讯地图相关 API 时加载，以提供准确的 API 说明与示例。
 
 ## 包含的 Skill
 
@@ -40,6 +40,15 @@ cd TencentMap_jsapi_skills
   ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.cursor/skills/tmap-jsapi-gl
   ```
 - 或直接把 `tmap-jsapi-gl` 文件夹复制到 `~/.cursor/skills/` 下。
+
+**CodeBuddy**
+
+- Skills 目录一般为：`~/.codebuddy/skills/`
+- 注册（软链，推荐）：
+  ```bash
+  ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.codebuddy/skills/tmap-jsapi-gl
+  ```
+- 或直接把 `tmap-jsapi-gl` 文件夹复制到 `~/.codebuddy/skills/` 下。
 
 ### 3. 在对话中使用
 
