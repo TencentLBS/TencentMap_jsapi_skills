@@ -21,34 +21,34 @@ cd TencentMap_jsapi_skills
 
 ### 2. 将 Skill 注册到你的 AI 助手
 
-把 `tmap-jsapi-gl` 目录链接或复制到当前环境对应的 skills 目录，这样 AI 在对话时会自动读取这些文档。
+把 `tmap-jsapi-gl-skill` 目录链接或复制到当前环境对应的 skills 目录，这样 AI 在对话时会自动读取这些文档。
 
 **Claude Desktop（本地）**
 
 - Skills 目录一般为：`~/.claude/skills/`
 - 注册（软链，推荐）：
   ```bash
-  ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.claude/skills/tmap-jsapi-gl
+  ln -sfn "$(pwd)/tmap-jsapi-gl-skill" ~/.claude/skills/tmap-jsapi-gl-skill
   ```
-- 或直接把 `tmap-jsapi-gl` 文件夹复制到 `~/.claude/skills/` 下。
+- 或直接把 `tmap-jsapi-gl-skill` 文件夹复制到 `~/.claude/skills/` 下。
 
 **Cursor**
 
 - Skills 目录一般为：`~/.cursor/skills/`
 - 注册（软链，推荐）：
   ```bash
-  ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.cursor/skills/tmap-jsapi-gl
+  ln -sfn "$(pwd)/tmap-jsapi-gl-skill" ~/.cursor/skills/tmap-jsapi-gl-skill
   ```
-- 或直接把 `tmap-jsapi-gl` 文件夹复制到 `~/.cursor/skills/` 下。
+- 或直接把 `tmap-jsapi-gl-skill` 文件夹复制到 `~/.cursor/skills/` 下。
 
 **CodeBuddy**
 
 - Skills 目录一般为：`~/.codebuddy/skills/`
 - 注册（软链，推荐）：
   ```bash
-  ln -sfn "$(pwd)/tmap-jsapi-gl" ~/.codebuddy/skills/tmap-jsapi-gl
+  ln -sfn "$(pwd)/tmap-jsapi-gl-skill" ~/.codebuddy/skills/tmap-jsapi-gl-skill
   ```
-- 或直接把 `tmap-jsapi-gl` 文件夹复制到 `~/.codebuddy/skills/` 下。
+- 或直接把 `tmap-jsapi-gl-skill` 文件夹复制到 `~/.codebuddy/skills/` 下。
 
 ### 3. 在对话中使用
 
@@ -58,7 +58,7 @@ cd TencentMap_jsapi_skills
 
 ```
 .
-├── tmap-jsapi-gl/          # 腾讯地图 JSAPI GL Skill
+├── tmap-jsapi-gl-skill/          # 腾讯地图 JSAPI GL Skill
 │   ├── SKILL.md            # Skill 入口与索引
 │   └── references/         # API 参考文档和示例
 │       ├── jsapigl/        # JS API GL 文档和示例
