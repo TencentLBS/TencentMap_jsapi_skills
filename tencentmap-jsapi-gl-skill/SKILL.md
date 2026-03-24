@@ -1,7 +1,8 @@
 ---
-name: tmap-jsapi-gl
-description: 腾讯地图 JavaScript GL（JSAPIGL）开发指南。在编写、审查或调试使用腾讯地图 API的代码时应运用此技能。适用于涉及地图初始化、覆盖物展示、图层控制、事件处理、控件交互、可视化渲染、地图工具、检索、路线规划、查地址、行政区划、ip定位、几何计算、三维模型展示、性能优化的任务。当用户提及 腾讯地图、 jsapi、jsapi-gl或相关地图开发需求时自动触发。
+name: tencentmap-jsapi-gl-skill
+description: 腾讯地图 JavaScript GL（JSAPIGL）开发指南。适用于地图应用或者工具的编写。在编写、审查或调试使用腾讯地图 API的代码时应运用此技能。适用于涉及地图初始化、覆盖物展示、图层控制、事件处理、控件交互、可视化渲染、地图工具、检索、路线规划、查地址、行政区划、ip定位、几何计算、三维模型展示、性能优化的任务。当用户提及 腾讯地图、 jsapi、jsapi-gl或相关地图开发需求时自动触发。
 version: 1.0.0
+metadata: { "openclaw": { "requires": { "bins": ["node"], "env": ["TMAP_JSAPI_KEY"] }, "primaryEnv": "TMAP_JSAPI_KEY" } }
 ---
 
 # TMap JSAPI GL Skill
@@ -115,7 +116,7 @@ version: 1.0.0
 <head>
     <meta charset="utf-8">
     <title>腾讯地图示例</title>
-    <script src="https://map.qq.com/api/gljs?v=3&key=[YOUR_KEY]"></script>
+    <script src="https://map.qq.com/api/gljs?v=3&key={TMAP_JSAPI_KEY}"></script>
     <!-- 如需可视化功能，添加: &libraries=visualization -->
 </head>
 <body>
@@ -134,7 +135,7 @@ version: 1.0.0
 
 ```javascript
 // 加载可视化库
-// <script src="https://map.qq.com/api/gljs?v=1.beta&libraries=visualization&key=[YOUR_KEY]"></script>
+// <script src="https://map.qq.com/api/gljs?v=1.beta&libraries=visualization&key={TMAP_JSAPI_KEY}"></script>
 
 var heat = new TMap.visualization.Heat({
     radius: 50,
@@ -158,7 +159,7 @@ heat.setData([
 
 ### JS API GL
 
-1. **API Key**: 使用腾讯地图API需要申请Key
+1. **API Key**: 使用腾讯地图API需要申请Key，通过环境变量 `TMAP_JSAPI_KEY` 配置，在代码中使用 `{TMAP_JSAPI_KEY}` 引用
 2. **版本**: 当前为 GL 版本，支持3D地图和WebGL渲染
 3. **浏览器兼容**: 现代浏览器，IE11+（需polyfill）
 4. **坐标系**: 使用 gcj02 坐标系
@@ -181,7 +182,7 @@ heat.setData([
 **使用示例**：
 ```html
 <!-- 加载多个附加库 -->
-<script src="https://map.qq.com/api/gljs?v=1&libraries=tools,geometry,service,model&key=[YOUR_KEY]"></script>
+<script src="https://map.qq.com/api/gljs?v=1&libraries=tools,geometry,service,model&key={TMAP_JSAPI_KEY}"></script>
 ```
 
 ### 可视化 API

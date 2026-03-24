@@ -21,34 +21,34 @@ cd TencentMap_jsapi_skills
 
 ### 2. Register the skill with your AI assistant
 
-Link or copy the `tmap-jsapi-gl-skill` directory into your environment's skills folder so the AI can load its docs during conversations.
+Link or copy the `tencentmap-jsapi-gl-skill` directory into your environment's skills folder so the AI can load its docs during conversations.
 
 **Claude Desktop (local)**
 
 - Skills directory is usually: `~/.claude/skills/`
 - Register via symlink (recommended):
   ```bash
-  ln -sfn "$(pwd)/tmap-jsapi-gl-skill" ~/.claude/skills/tmap-jsapi-gl-skill
+  ln -sfn "$(pwd)/tencentmap-jsapi-gl-skill" ~/.claude/skills/tencentmap-jsapi-gl-skill
   ```
-- Or copy the `tmap-jsapi-gl-skill` folder into `~/.claude/skills/`.
+- Or copy the `tencentmap-jsapi-gl-skill` folder into `~/.claude/skills/`.
 
 **Cursor**
 
 - Skills directory is usually: `~/.cursor/skills/`
 - Register via symlink (recommended):
   ```bash
-  ln -sfn "$(pwd)/tmap-jsapi-gl-skill" ~/.cursor/skills/tmap-jsapi-gl-skill
+  ln -sfn "$(pwd)/tencentmap-jsapi-gl-skill" ~/.cursor/skills/tencentmap-jsapi-gl-skill
   ```
-- Or copy the `tmap-jsapi-gl-skill` folder into `~/.cursor/skills/`.
+- Or copy the `tencentmap-jsapi-gl-skill` folder into `~/.cursor/skills/`.
 
 **CodeBuddy**
 
 - Skills directory is usually: `~/.codebuddy/skills/`
 - Register via symlink (recommended):
   ```bash
-  ln -sfn "$(pwd)/tmap-jsapi-gl-skill" ~/.codebuddy/skills/tmap-jsapi-gl-skill
+  ln -sfn "$(pwd)/tencentmap-jsapi-gl-skill" ~/.codebuddy/skills/tencentmap-jsapi-gl-skill
   ```
-- Or copy the `tmap-jsapi-gl-skill` folder into `~/.codebuddy/skills/`.
+- Or copy the `tencentmap-jsapi-gl-skill` folder into `~/.codebuddy/skills/`.
 
 ### 3. Use it in chat
 
@@ -58,7 +58,7 @@ When your questions mention “Tencent Map”, “TMap”, “jsapi-gl”, or si
 
 ```
 .
-├── tmap-jsapi-gl-skill/          # Tencent Map JSAPI GL skill
+├── tencentmap-jsapi-gl-skill/          # Tencent Map JSAPI GL skill
 │   ├── SKILL.md            # Skill entry and index
 │   └── references/         # API reference docs and demos
 │       ├── jsapigl/        # JS API GL documentation and demos
