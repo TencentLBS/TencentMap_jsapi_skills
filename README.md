@@ -8,7 +8,7 @@ This repository provides AI assistant **Skills** for [Tencent Map JSAPI](https:/
 
 | Skill | Description |
 |-------|-------------|
-| **tmap-jsapi-gl** | Tencent Map JSAPI GL: Map initialization, overlays (markers, polylines, polygons), events, layers, controls, visualization, tools, search, routing, geocoding, administrative districts, IP location, geometric calculations, 3D model display, performance optimization, etc. For 2D and 3D map development using WebGL. |
+| **tencentmap-jsapi-gl-skill** | Tencent Map JSAPI GL: Map initialization, overlays (markers, polylines, polygons), events, layers, controls, visualization, tools, search, routing, geocoding, administrative districts, IP location, geometric calculations, 3D model display, performance optimization, etc. For 2D and 3D map development using WebGL. |
 
 ## How to Use
 
